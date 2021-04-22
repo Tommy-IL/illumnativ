@@ -1,0 +1,672 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local DarkenBackground = Instance.new("Frame")
+local GUI = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local IYFE = Instance.new("TextButton")
+local IYFE_Roundify_12px = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local AltClick = Instance.new("TextButton")
+local IYFE_Roundify_12px_2 = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local AntiAFK = Instance.new("TextButton")
+local IYFE_Roundify_12px_3 = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local HideEssential = Instance.new("TextButton")
+local UnhideEssential = Instance.new("TextButton")
+local Toggle = Instance.new("TextButton")
+local GUI2 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
+local PrisonLife = Instance.new("TextButton")
+local IYFE_Roundify_12px_4 = Instance.new("ImageLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local Interaxis = Instance.new("TextButton")
+local IYFE_Roundify_12px_5 = Instance.new("ImageLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local fePoses = Instance.new("TextButton")
+local IYFE_Roundify_12px_6 = Instance.new("ImageLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local HideHub = Instance.new("TextButton")
+local UnhideHub = Instance.new("TextButton")
+local parkour = Instance.new("TextButton")
+local IYFE_Roundify_12px_7 = Instance.new("ImageLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local GUI3 = Instance.new("Frame")
+local TextLabel_10 = Instance.new("TextLabel")
+local bv4 = Instance.new("TextButton")
+local IYFE_Roundify_12px_8 = Instance.new("ImageLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local bv1 = Instance.new("TextButton")
+local IYFE_Roundify_12px_9 = Instance.new("ImageLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local HideVer = Instance.new("TextButton")
+local UnhideVer = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+DarkenBackground.Name = "DarkenBackground"
+DarkenBackground.Parent = ScreenGui
+DarkenBackground.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DarkenBackground.BackgroundTransparency = 0.400
+DarkenBackground.Position = UDim2.new(-0.020833334, 0, -0.427247435, 0)
+DarkenBackground.Size = UDim2.new(0, 2000, 0, 2000)
+
+GUI.Name = "GUI"
+GUI.Parent = ScreenGui
+GUI.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+GUI.BorderColor3 = Color3.fromRGB(255, 183, 254)
+GUI.BorderSizePixel = 3
+GUI.Position = UDim2.new(0.69635427, 0, 0.011121409, 0)
+GUI.Size = UDim2.new(0, 197, 0, 553)
+GUI.Active = true
+GUI.Draggable = true
+
+TextLabel.Parent = GUI
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "ESSENTIAL"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 40.000
+
+IYFE.Name = "IYFE"
+IYFE.Parent = GUI
+IYFE.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+IYFE.BackgroundTransparency = 1.000
+IYFE.BorderColor3 = Color3.fromRGB(21, 21, 21)
+IYFE.BorderSizePixel = 0
+IYFE.Position = UDim2.new(0, 0, 0.121157326, 0)
+IYFE.Size = UDim2.new(0, 197, 0, 50)
+IYFE.Font = Enum.Font.SourceSansBold
+IYFE.Text = "Infinite Yield FE"
+IYFE.TextColor3 = Color3.fromRGB(255, 255, 255)
+IYFE.TextSize = 25.000
+IYFE.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+IYFE_Roundify_12px.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px.Parent = IYFE
+IYFE_Roundify_12px.Active = true
+IYFE_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px.BackgroundTransparency = 1.000
+IYFE_Roundify_12px.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px.Selectable = true
+IYFE_Roundify_12px.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px.SliceScale = 0.120
+
+TextLabel_2.Parent = IYFE_Roundify_12px
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Infinite Yield FE"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 25.000
+
+AltClick.Name = "AltClick"
+AltClick.Parent = GUI
+AltClick.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+AltClick.BackgroundTransparency = 1.000
+AltClick.BorderColor3 = Color3.fromRGB(21, 21, 21)
+AltClick.BorderSizePixel = 0
+AltClick.Position = UDim2.new(0, 0, 0.231000006, 0)
+AltClick.Size = UDim2.new(0, 197, 0, 50)
+AltClick.Font = Enum.Font.SourceSansBold
+AltClick.Text = "Infinite Yield FE"
+AltClick.TextColor3 = Color3.fromRGB(255, 255, 255)
+AltClick.TextSize = 25.000
+AltClick.MouseButton1Down:connect(function()
+	local Plr = game:GetService("Players").LocalPlayer
+	local Mouse = Plr:GetMouse()
+
+	Mouse.Button1Down:connect(function()
+		if not game:GetService("UserInputService"):IsKeyDown(Enum.KeyCode.LeftAlt) then return end
+		if not Mouse.Target then return end
+		Mouse.Target:Destroy()
+	end)
+end)
+
+IYFE_Roundify_12px_2.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_2.Parent = AltClick
+IYFE_Roundify_12px_2.Active = true
+IYFE_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_2.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_2.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_2.Selectable = true
+IYFE_Roundify_12px_2.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_2.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_2.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_2.SliceScale = 0.120
+
+TextLabel_3.Parent = IYFE_Roundify_12px_2
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Alt Click Delete"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 25.000
+
+AntiAFK.Name = "AntiAFK"
+AntiAFK.Parent = GUI
+AntiAFK.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+AntiAFK.BackgroundTransparency = 1.000
+AntiAFK.BorderColor3 = Color3.fromRGB(21, 21, 21)
+AntiAFK.BorderSizePixel = 0
+AntiAFK.Position = UDim2.new(0, 0, 0.340999991, 0)
+AntiAFK.Size = UDim2.new(0, 197, 0, 50)
+AntiAFK.Font = Enum.Font.SourceSansBold
+AntiAFK.Text = "Infinite Yield FE"
+AntiAFK.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiAFK.TextSize = 25.000
+AntiAFK.MouseButton1Down:connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+end)
+
+IYFE_Roundify_12px_3.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_3.Parent = AntiAFK
+IYFE_Roundify_12px_3.Active = true
+IYFE_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_3.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_3.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_3.Selectable = true
+IYFE_Roundify_12px_3.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_3.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_3.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_3.SliceScale = 0.120
+
+TextLabel_4.Parent = IYFE_Roundify_12px_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_4.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Anti AFK"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 25.000
+
+HideEssential.Name = "HideEssential"
+HideEssential.Parent = GUI
+HideEssential.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideEssential.BackgroundTransparency = 1.000
+HideEssential.Position = UDim2.new(0.299492389, 0, 0.913200736, 0)
+HideEssential.Size = UDim2.new(0, 81, 0, 44)
+HideEssential.Font = Enum.Font.SourceSansBold
+HideEssential.Text = "^"
+HideEssential.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideEssential.TextSize = 75.000
+HideEssential.TextWrapped = true
+HideEssential.MouseButton1Down:connect(function()
+	HideEssential.Parent.AltClick.Visible = false
+	HideEssential.Parent.AntiAFK.Visible = false
+	HideEssential.Parent.IYFE.Visible = false
+	HideEssential.Parent.HideEssential.Visible = false
+	wait(0.000001)
+	HideEssential.Parent.Size = UDim2.new(0, 197,0, 49)
+	HideEssential.Parent.UnhideEssential.Visible = true
+end)
+
+
+UnhideEssential.Name = "UnhideEssential"
+UnhideEssential.Parent = GUI
+UnhideEssential.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnhideEssential.BackgroundTransparency = 1.000
+UnhideEssential.Position = UDim2.new(0.299492389, 0, 1.0152415, 0)
+UnhideEssential.Size = UDim2.new(0, 81, 0, 32)
+UnhideEssential.Visible = false
+UnhideEssential.Font = Enum.Font.SourceSansBold
+UnhideEssential.Text = "━"
+UnhideEssential.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnhideEssential.TextSize = 35.000
+UnhideEssential.TextWrapped = true
+UnhideEssential.MouseButton1Down:connect(function()
+	UnhideEssential.Parent.Size = UDim2.new(0, 197, 0, 553)
+	UnhideEssential.Parent.UnhideEssential.Visible = false
+	wait(0.0000000001)
+	UnhideEssential.Parent.AltClick.Visible = true
+	UnhideEssential.Parent.AntiAFK.Visible = true
+	UnhideEssential.Parent.IYFE.Visible = true
+	UnhideEssential.Parent.HideEssential.Visible = true
+end)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Toggle.BorderColor3 = Color3.fromRGB(255, 183, 254)
+Toggle.BorderSizePixel = 2
+Toggle.Position = UDim2.new(0.00937500037, 0, 0.963855386, 0)
+Toggle.Size = UDim2.new(0, 100, 0, 25)
+Toggle.Font = Enum.Font.SourceSansBold
+Toggle.Text = "TOGGLE"
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextSize = 30.000
+Toggle.MouseButton1Down:connect(function()
+	Toggle.Parent.GUI.Visible = not Toggle.Parent.GUI.Visible
+	Toggle.Parent.GUI2.Visible = not Toggle.Parent.GUI2.Visible
+	Toggle.Parent.GUI3.Visible = not Toggle.Parent.GUI3.Visible
+	wait(0.0000000001)
+	Toggle.Parent.DarkenBackground.Visible = not Toggle.Parent.DarkenBackground.Visible
+end)
+
+GUI2.Name = "GUI2"
+GUI2.Parent = ScreenGui
+GUI2.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+GUI2.BorderColor3 = Color3.fromRGB(255, 183, 254)
+GUI2.BorderSizePixel = 3
+GUI2.Position = UDim2.new(0.555999994, 0, 0.0109999999, 0)
+GUI2.Size = UDim2.new(0, 197, 0, 553)
+GUI2.Active = true
+GUI2.Draggable = true
+
+TextLabel_5.Parent = GUI2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.SourceSansBold
+TextLabel_5.Text = "HUBS"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 40.000
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = GUI2
+PrisonLife.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+PrisonLife.BackgroundTransparency = 1.000
+PrisonLife.BorderColor3 = Color3.fromRGB(21, 21, 21)
+PrisonLife.BorderSizePixel = 0
+PrisonLife.Position = UDim2.new(0, 0, 0.121157326, 0)
+PrisonLife.Size = UDim2.new(0, 197, 0, 50)
+PrisonLife.Font = Enum.Font.SourceSansBold
+PrisonLife.Text = "Infinite Yield FE"
+PrisonLife.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLife.TextSize = 25.000
+PrisonLife.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tAeA612H'),true))()
+end)
+
+IYFE_Roundify_12px_4.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_4.Parent = PrisonLife
+IYFE_Roundify_12px_4.Active = true
+IYFE_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_4.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_4.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_4.Selectable = true
+IYFE_Roundify_12px_4.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_4.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_4.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_4.SliceScale = 0.120
+
+TextLabel_6.Parent = IYFE_Roundify_12px_4
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_6.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSansBold
+TextLabel_6.Text = "Prison Life"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 25.000
+
+Interaxis.Name = "Interaxis"
+Interaxis.Parent = GUI2
+Interaxis.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+Interaxis.BackgroundTransparency = 1.000
+Interaxis.BorderColor3 = Color3.fromRGB(21, 21, 21)
+Interaxis.BorderSizePixel = 0
+Interaxis.Position = UDim2.new(0, 0, 0.231000006, 0)
+Interaxis.Size = UDim2.new(0, 197, 0, 50)
+Interaxis.Font = Enum.Font.SourceSansBold
+Interaxis.Text = "Infinite Yield FE"
+Interaxis.TextColor3 = Color3.fromRGB(255, 255, 255)
+Interaxis.TextSize = 25.000
+Interaxis.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://paste.ee/r/jSiFQ'),true))()
+end)
+
+IYFE_Roundify_12px_5.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_5.Parent = Interaxis
+IYFE_Roundify_12px_5.Active = true
+IYFE_Roundify_12px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_5.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_5.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_5.Selectable = true
+IYFE_Roundify_12px_5.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_5.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_5.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_5.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_5.SliceScale = 0.120
+
+TextLabel_7.Parent = IYFE_Roundify_12px_5
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_7.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSansBold
+TextLabel_7.Text = "Interaxis"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 25.000
+
+fePoses.Name = "fePoses"
+fePoses.Parent = GUI2
+fePoses.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+fePoses.BackgroundTransparency = 1.000
+fePoses.BorderColor3 = Color3.fromRGB(21, 21, 21)
+fePoses.BorderSizePixel = 0
+fePoses.Position = UDim2.new(0, 0, 0.340999991, 0)
+fePoses.Size = UDim2.new(0, 197, 0, 50)
+fePoses.Font = Enum.Font.SourceSansBold
+fePoses.Text = "Infinite Yield FE"
+fePoses.TextColor3 = Color3.fromRGB(255, 255, 255)
+fePoses.TextSize = 25.000
+fePoses.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://paste.ee/r/IQ41a'),true))()
+end)
+
+IYFE_Roundify_12px_6.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_6.Parent = fePoses
+IYFE_Roundify_12px_6.Active = true
+IYFE_Roundify_12px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_6.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_6.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_6.Selectable = true
+IYFE_Roundify_12px_6.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_6.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_6.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_6.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_6.SliceScale = 0.120
+
+TextLabel_8.Parent = IYFE_Roundify_12px_6
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_8.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_8.Font = Enum.Font.SourceSansBold
+TextLabel_8.Text = "FE Animations"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 25.000
+
+HideHub.Name = "HideHub"
+HideHub.Parent = GUI2
+HideHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideHub.BackgroundTransparency = 1.000
+HideHub.Position = UDim2.new(0.299492389, 0, 0.913200736, 0)
+HideHub.Size = UDim2.new(0, 81, 0, 44)
+HideHub.Font = Enum.Font.SourceSansBold
+HideHub.Text = "^"
+HideHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideHub.TextSize = 75.000
+HideHub.TextWrapped = true
+HideHub.MouseButton1Down:connect(function()
+	HideHub.Parent.Interaxis.Visible = false
+	HideHub.Parent.PrisonLife.Visible = false
+	HideHub.Parent.fePoses.Visible = false
+	HideHub.Parent.HideHub.Visible = false
+	wait(0.0000001)
+	HideHub.Parent.Size = UDim2.new(0, 197,0, 49)
+	HideHub.Parent.UnhideHub.Visible = true
+end)
+
+UnhideHub.Name = "UnhideHub"
+UnhideHub.Parent = GUI2
+UnhideHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnhideHub.BackgroundTransparency = 1.000
+UnhideHub.Position = UDim2.new(0.299492389, 0, 1.0152415, 0)
+UnhideHub.Size = UDim2.new(0, 81, 0, 32)
+UnhideHub.Visible = false
+UnhideHub.Font = Enum.Font.SourceSansBold
+UnhideHub.Text = "━"
+UnhideHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnhideHub.TextSize = 35.000
+UnhideHub.TextWrapped = true
+UnhideHub.MouseButton1Down:connect(function()
+	UnhideHub.Parent.Size = UDim2.new(0, 197, 0, 553)
+	UnhideHub.Parent.UnhideHub.Visible = false
+	wait(0.0000000001)
+	UnhideHub.Parent.Interaxis.Visible = true
+	UnhideHub.Parent.fePoses.Visible = true
+	UnhideHub.Parent.PrisonLife.Visible = true
+	UnhideHub.Parent.HideHub.Visible = true
+end)
+
+parkour.Name = "parkour"
+parkour.Parent = GUI2
+parkour.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+parkour.BackgroundTransparency = 1.000
+parkour.BorderColor3 = Color3.fromRGB(21, 21, 21)
+parkour.BorderSizePixel = 0
+parkour.Position = UDim2.new(0, 0, 0.451000005, 0)
+parkour.Size = UDim2.new(0, 197, 0, 50)
+parkour.Font = Enum.Font.SourceSansBold
+parkour.Text = "Infinite Yield FE"
+parkour.TextColor3 = Color3.fromRGB(255, 255, 255)
+parkour.TextSize = 25.000
+parkour.MouseButton1Down:connect(function()
+	if game.ReplicatedStorage:FindFirstChild('HighCombo') then 
+		game.ReplicatedStorage.HighCombo:Destroy()--wow amazing anti cheat retards
+		warn('destroyed shitty anticheat lmfao')
+	end
+	wait(0.0000001)
+	loadstring(game:httpGet("https://pastebinp.com/raw/MZwgbukA", true))()
+	wait(0.0000001)
+	loadstring(game:httpGet("https://pastebin.com/raw/X7tcng4i", true))()
+end)
+
+IYFE_Roundify_12px_7.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_7.Parent = parkour
+IYFE_Roundify_12px_7.Active = true
+IYFE_Roundify_12px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_7.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_7.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_7.Selectable = true
+IYFE_Roundify_12px_7.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_7.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_7.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_7.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_7.SliceScale = 0.120
+
+TextLabel_9.Parent = IYFE_Roundify_12px_7
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_9.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_9.Font = Enum.Font.SourceSansBold
+TextLabel_9.Text = "Parkour"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 25.000
+
+GUI3.Name = "GUI3"
+GUI3.Parent = ScreenGui
+GUI3.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+GUI3.BorderColor3 = Color3.fromRGB(255, 183, 254)
+GUI3.BorderSizePixel = 3
+GUI3.Position = UDim2.new(0.416000009, 0, 0.0109999999, 0)
+GUI3.Size = UDim2.new(0, 197, 0, 553)
+GUI3.Active = true
+GUI3.Draggable = true
+
+TextLabel_10.Parent = GUI3
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Font = Enum.Font.SourceSansBold
+TextLabel_10.Text = "VERSIONS"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 40.000
+
+bv4.Name = "bv4"
+bv4.Parent = GUI3
+bv4.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+bv4.BackgroundTransparency = 1.000
+bv4.BorderColor3 = Color3.fromRGB(21, 21, 21)
+bv4.BorderSizePixel = 0
+bv4.Position = UDim2.new(0, 0, 0.121157326, 0)
+bv4.Size = UDim2.new(0, 197, 0, 50)
+bv4.Font = Enum.Font.SourceSansBold
+bv4.Text = "Infinite Yield FE"
+bv4.TextColor3 = Color3.fromRGB(255, 255, 255)
+bv4.TextSize = 25.000
+bv4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/illumnativ/main/source'),true))()
+end)
+
+IYFE_Roundify_12px_8.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_8.Parent = bv4
+IYFE_Roundify_12px_8.Active = true
+IYFE_Roundify_12px_8.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_8.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_8.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_8.Selectable = true
+IYFE_Roundify_12px_8.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_8.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_8.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_8.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_8.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_8.SliceScale = 0.120
+
+TextLabel_11.Parent = IYFE_Roundify_12px_8
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_11.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_11.Font = Enum.Font.SourceSansBold
+TextLabel_11.Text = "Beta V4"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 25.000
+
+bv1.Name = "bv1"
+bv1.Parent = GUI3
+bv1.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+bv1.BackgroundTransparency = 1.000
+bv1.BorderColor3 = Color3.fromRGB(21, 21, 21)
+bv1.BorderSizePixel = 0
+bv1.Position = UDim2.new(0, 0, 0.231000006, 0)
+bv1.Size = UDim2.new(0, 197, 0, 50)
+bv1.Font = Enum.Font.SourceSansBold
+bv1.Text = "Infinite Yield FE"
+bv1.TextColor3 = Color3.fromRGB(255, 255, 255)
+bv1.TextSize = 25.000
+bv1.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/8i7FtmbC'),true))()
+end)
+
+IYFE_Roundify_12px_9.Name = "IYFE_Roundify_12px"
+IYFE_Roundify_12px_9.Parent = bv1
+IYFE_Roundify_12px_9.Active = true
+IYFE_Roundify_12px_9.AnchorPoint = Vector2.new(0.5, 0.5)
+IYFE_Roundify_12px_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IYFE_Roundify_12px_9.BackgroundTransparency = 1.000
+IYFE_Roundify_12px_9.Position = UDim2.new(0.505004227, 0, 0.5, 0)
+IYFE_Roundify_12px_9.Selectable = true
+IYFE_Roundify_12px_9.Size = UDim2.new(0.840557575, 0, 1, 0)
+IYFE_Roundify_12px_9.Image = "rbxassetid://3570695787"
+IYFE_Roundify_12px_9.ImageColor3 = Color3.fromRGB(33, 33, 33)
+IYFE_Roundify_12px_9.ScaleType = Enum.ScaleType.Slice
+IYFE_Roundify_12px_9.SliceCenter = Rect.new(100, 100, 100, 100)
+IYFE_Roundify_12px_9.SliceScale = 0.120
+
+TextLabel_12.Parent = IYFE_Roundify_12px_9
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.000179223716, 0, 0, 0)
+TextLabel_12.Size = UDim2.new(0, 165, 0, 50)
+TextLabel_12.Font = Enum.Font.SourceSansBold
+TextLabel_12.Text = "Beta V1"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 25.000
+
+HideVer.Name = "HideVer"
+HideVer.Parent = GUI3
+HideVer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HideVer.BackgroundTransparency = 1.000
+HideVer.Position = UDim2.new(0.299492389, 0, 0.913200736, 0)
+HideVer.Size = UDim2.new(0, 81, 0, 44)
+HideVer.Font = Enum.Font.SourceSansBold
+HideVer.Text = "^"
+HideVer.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideVer.TextSize = 75.000
+HideVer.TextWrapped = true
+HideVer.MouseButton1Down:connect(function()
+	HideVer.Parent.bv4.Visible = false
+	HideVer.Parent.bv1.Visible = false
+	HideVer.Parent.HideVer.Visible = false
+	wait(0.000001)
+	HideVer.Parent.Size = UDim2.new(0, 197,0, 49)
+	HideVer.Parent.UnhideVer.Visible = true
+end)
+
+UnhideVer.Name = "UnhideVer"
+UnhideVer.Parent = GUI3
+UnhideVer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnhideVer.BackgroundTransparency = 1.000
+UnhideVer.Position = UDim2.new(0.299492389, 0, 1.0152415, 0)
+UnhideVer.Size = UDim2.new(0, 81, 0, 32)
+UnhideVer.Visible = false
+UnhideVer.Font = Enum.Font.SourceSansBold
+UnhideVer.Text = "━"
+UnhideVer.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnhideVer.TextSize = 35.000
+UnhideVer.TextWrapped = true
+UnhideVer.MouseButton1Down:connect(function()
+	UnhideVer.Parent.Size = UDim2.new(0, 197, 0, 553)
+	UnhideVer.Parent.UnhideVer.Visible = false
+	wait(0.0000000001)
+	UnhideVer.Parent.bv1.Visible = true
+	UnhideVer.Parent.bv4.Visible = true
+	UnhideVer.Parent.HideVer.Visible = true
+end)
+
+-- Scripts:
+
+local function DHVMV_fake_script() -- GUI.LocalScript 
+	local script = Instance.new('LocalScript', GUI)
+
+	local UserInputService = game:GetService("UserInputService")
+	local gui = script.Parent.Parent
+	
+	local function closeGui(input, gameProcessed)
+		if (gameProcessed) then return; end
+		if (input.KeyCode == Enum.KeyCode.RightAlt) then
+			gui:Destroy()
+		end
+	end
+	
+	UserInputService.InputBegan:Connect(closeGui)
+end
+coroutine.wrap(DHVMV_fake_script)()
