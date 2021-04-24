@@ -15,7 +15,7 @@ local Toggle_Roundify_12px = Instance.new("ImageLabel")
 
 -- gui
 
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
@@ -25,6 +25,7 @@ Frame.Position = UDim2.new(0.707426846, 0, 0.653562665, 0)
 Frame.Size = UDim2.new(0, 295, 0, 254)
 Frame.Active = true
 Frame.Draggable = true
+Frame.Visible = true
 
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
@@ -130,6 +131,9 @@ Toggle.Font = Enum.Font.SourceSans
 Toggle.Text = " "
 Toggle.TextColor3 = Color3.fromRGB(0, 0, 0)
 Toggle.TextSize = 14.000
+Toggle.MouseButton1Down:connect(function()
+	script.Parent.Parent.Frame.Visible = not script.Parent.Parent.Frame.Visible
+end)
 
 Toggle_Roundify_12px.Name = "Toggle_Roundify_12px"
 Toggle_Roundify_12px.Parent = Toggle
