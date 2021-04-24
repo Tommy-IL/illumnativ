@@ -51,7 +51,7 @@ InfiniteBlocks.TextSize = 15.000
 InfiniteBlocks.MouseButton1Down:connect(function()
 	while true do
 		wait(0.0001)
-		game:GetService("Players").controIller.PlayerGui.StatsGui.Block.Count.Text = 1000
+		game:GetService("Players").LocalPlayer.PlayerGui.StatsGui.Block.Count.Text = 1000
 	end
 end)
 
