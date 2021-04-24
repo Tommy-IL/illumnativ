@@ -51,7 +51,7 @@ InfiniteBlocks.TextSize = 15.000
 InfiniteBlocks.MouseButton1Down:connect(function()
 	while true do
 		wait(0.0001)
-		game:GetService("Players").LocalPlayer.PlayerGui.StatsGui.Block.Count.Text = 1000
+		game:GetService("Players").LocalPlayer.PlayerGui.StatsGui.Block.Count.Text = 99999
 	end
 end)
 
@@ -68,8 +68,8 @@ InfiniteForce.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfiniteForce.TextSize = 15.000
 InfiniteForce.MouseButton1Down:connect(function()
 	while true do
-		wait(0.0001)
-		game.Players.LocalPlayer.Force.Value = 100
+		wait(0.001)
+		game.Players.LocalPlayer.Force.Value = 1000
 	end
 end)
 
