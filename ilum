@@ -69,7 +69,7 @@ InfiniteForce.TextSize = 15.000
 InfiniteForce.MouseButton1Down:connect(function()
 	while true do
 		wait(0.001)
-		game.Players.LocalPlayer.Force.Value = 1000
+		game.Players.LocalPlayer.Force.Value = 100
 	end
 end)
 
