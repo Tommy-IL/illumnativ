@@ -1,0 +1,207 @@
+-- tommy.#0010
+-- fuck off retarded skid
+-- extremely sleep deprived whilst making this
+
+-- locals
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local InfiniteBlocks = Instance.new("TextButton")
+local InfiniteForce = Instance.new("TextButton")
+local IYFE = Instance.new("TextButton")
+local RainbowSaber = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Second = Instance.new("Frame")
+local Heal = Instance.new("TextButton")
+local ToggleSecond = Instance.new("TextButton")
+local Toggle = Instance.new("TextButton")
+
+--gui
+
+ScreenGui.Parent = game.Workspace
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Main.BorderColor3 = Color3.fromRGB(238, 166, 255)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0.621905446, 0, 0.522113025, 0)
+Main.Size = UDim2.new(0, 309, 0, 238)
+Main.Visible = false
+Main.Active = true
+Main.Draggable = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+TextLabel.BorderColor3 = Color3.fromRGB(238, 166, 255)
+TextLabel.BorderSizePixel = 2
+TextLabel.Position = UDim2.new(0.174999997, 0, -0.209999993, -2)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "ILUM FUCKER"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 23.000
+
+InfiniteBlocks.Name = "InfiniteBlocks"
+InfiniteBlocks.Parent = Main
+InfiniteBlocks.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+InfiniteBlocks.BorderColor3 = Color3.fromRGB(238, 166, 255)
+InfiniteBlocks.BorderSizePixel = 2
+InfiniteBlocks.Position = UDim2.new(0.572686076, 0, 0.0920000002, 0)
+InfiniteBlocks.Size = UDim2.new(0, 97, 0, 44)
+InfiniteBlocks.Font = Enum.Font.SourceSansSemibold
+InfiniteBlocks.Text = "Infinite Blocks"
+InfiniteBlocks.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteBlocks.TextSize = 21.000
+InfiniteBlocks.TextWrapped = true
+InfiniteBlocks.MouseButton1Down:connect(function()
+	while true do
+		wait(0.0001)
+		game:GetService("Players").LocalPlayer.PlayerGui.StatsGui.Block.Count.Text = 99999
+	end
+end)
+
+InfiniteForce.Name = "InfiniteForce"
+InfiniteForce.Parent = Main
+InfiniteForce.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+InfiniteForce.BorderColor3 = Color3.fromRGB(238, 166, 255)
+InfiniteForce.BorderSizePixel = 2
+InfiniteForce.Position = UDim2.new(0.114433609, 0, 0.0919999853, 0)
+InfiniteForce.Size = UDim2.new(0, 97, 0, 44)
+InfiniteForce.Font = Enum.Font.SourceSansSemibold
+InfiniteForce.Text = "Infinite Force"
+InfiniteForce.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteForce.TextSize = 21.000
+InfiniteForce.TextWrapped = true
+InfiniteForce.MouseButton1Down:connect(function()
+	while true do
+		wait(0.001)
+		game.Players.LocalPlayer.Force.Value = 100
+	end
+end)
+
+IYFE.Name = "IYFE"
+IYFE.Parent = Main
+IYFE.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+IYFE.BorderColor3 = Color3.fromRGB(238, 166, 255)
+IYFE.BorderSizePixel = 2
+IYFE.Position = UDim2.new(0.569449842, 0, 0.356705904, 0)
+IYFE.Size = UDim2.new(0, 97, 0, 44)
+IYFE.Font = Enum.Font.SourceSansSemibold
+IYFE.Text = "Quick IY"
+IYFE.TextColor3 = Color3.fromRGB(255, 255, 255)
+IYFE.TextSize = 21.000
+IYFE.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+RainbowSaber.Name = "RainbowSaber"
+RainbowSaber.Parent = Main
+RainbowSaber.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+RainbowSaber.BorderColor3 = Color3.fromRGB(238, 166, 255)
+RainbowSaber.BorderSizePixel = 2
+RainbowSaber.Position = UDim2.new(0.11119736, 0, 0.356705874, 0)
+RainbowSaber.Size = UDim2.new(0, 97, 0, 44)
+RainbowSaber.Font = Enum.Font.SourceSansSemibold
+RainbowSaber.Text = "Rainbow Saber"
+RainbowSaber.TextColor3 = Color3.fromRGB(255, 255, 255)
+RainbowSaber.TextSize = 21.000
+RainbowSaber.TextWrapped = true
+RainbowSaber.MouseButton1Down:connect(function()
+	local colors = {"Blue", "Green", "Yellow", "Cyan", "Purple", "White", "BlackGreen", "Orange", "BlackBlue", "BlackRed", "BlackYellow", "BlackRainbow", "BlackPink", "BlackPurple"}
+
+	while true do
+		for _,chosenColor in pairs(colors) do
+			game.ReplicatedStorage.Remotes['CrystalChange']:FireServer(chosenColor)
+			wait(0.1)
+		end
+	end
+end)
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(238, 166, 255)
+TextLabel_2.BorderSizePixel = 2
+TextLabel_2.Position = UDim2.new(0.174757287, 0, 0.672268927, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "tommy.#0010"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 25.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(238, 166, 255)
+
+Second.Name = "Second"
+Second.Parent = Main
+Second.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Second.BorderColor3 = Color3.fromRGB(238, 166, 255)
+Second.BorderSizePixel = 2
+Second.Position = UDim2.new(1.03883529, 0, 0, 0)
+Second.Size = UDim2.new(0, 153, 0, 238)
+Second.Visible = false
+
+Heal.Name = "Heal"
+Heal.Parent = Second
+Heal.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Heal.BorderColor3 = Color3.fromRGB(238, 166, 255)
+Heal.BorderSizePixel = 2
+Heal.Position = UDim2.new(0.111111112, 0, 0.0630252138, 0)
+Heal.Size = UDim2.new(0, 119, 0, 50)
+Heal.Font = Enum.Font.SourceSansSemibold
+Heal.Text = "Heal"
+Heal.TextColor3 = Color3.fromRGB(255, 255, 255)
+Heal.TextSize = 21.000
+Heal.MouseButton1Down:connect(function()
+	local args = {
+		[1] = "Heal",
+		[2] = {
+			[1] = game:GetService("Players").LocalPlayer
+		},
+		[3] = 1
+	}
+
+	game:GetService("ReplicatedStorage").Remotes.ForcePower:FireServer(unpack(args))
+end)
+
+ToggleSecond.Name = "ToggleSecond"
+ToggleSecond.Parent = Main
+ToggleSecond.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToggleSecond.BackgroundTransparency = 1.000
+ToggleSecond.Position = UDim2.new(0.902783215, 0, 0, 0)
+ToggleSecond.Size = UDim2.new(0, 30, 0, 30)
+ToggleSecond.Font = Enum.Font.SourceSansBold
+ToggleSecond.Text = ">"
+ToggleSecond.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleSecond.TextSize = 30.000
+
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Toggle.BorderColor3 = Color3.fromRGB(238, 166, 255)
+Toggle.BorderSizePixel = 2
+Toggle.Position = UDim2.new(0.00375093776, 1, 0.458255529, 0)
+Toggle.Size = UDim2.new(0, 70, 0, 23)
+Toggle.Font = Enum.Font.SourceSansBold
+Toggle.Text = "TOGGLE"
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextSize = 17.000
+Toggle.MouseButton1Down:connect(function()
+	Toggle.Parent.Main.Visible = not Toggle.Parent.Main.Visible
+end)
+
+-- local scripts
+
+local function JFVLTW_fake_script() -- ToggleSecond.LocalScript 
+	local script = Instance.new('LocalScript', ToggleSecond)
+
+	local toggle = script.Parent
+	local second = script.Parent.Parent.Second
+	
+	
+	toggle.MouseButton1Down:connect(function()
+		second.Visible = not second.Visible
+	end)
+end
+coroutine.wrap(JFVLTW_fake_script)()
