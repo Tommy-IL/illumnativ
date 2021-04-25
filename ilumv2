@@ -19,7 +19,7 @@ local Toggle = Instance.new("TextButton")
 
 --gui
 
-ScreenGui.Parent = game.Workspace
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
