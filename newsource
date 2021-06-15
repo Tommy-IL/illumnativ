@@ -1,6 +1,5 @@
 -- fuck off skid
 -- tommy.#0010
-print("New update pushed!")
 
 -- locals
 
@@ -53,6 +52,7 @@ local UnhideVer = Instance.new("TextButton")
 -- gui
 
 print("Right Alt to Destroy GUI!")
+print("Developer Build loaded!")
 ScreenGui.Parent = game.CoreGui
 
 DarkenBackground.Name = "DarkenBackground"
