@@ -272,7 +272,7 @@ Aimbot.Text = "Infinite Yield FE"
 Aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
 Aimbot.TextSize = 25.000
 Aimbot.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/jxt8ya7M'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Tommy-IL/misc-scripts/main/Aimbot'),true))()
 end)
 
 IYFE_Roundify_12px_4.Name = "IYFE_Roundify_12px"
