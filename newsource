@@ -1,5 +1,6 @@
 -- fuck off skid
 -- tommy.#0010
+-- tot
 
 -- locals
 
@@ -259,7 +260,7 @@ UnhideEssential.MouseButton1Down:connect(function()
 	UnhideEssential.Parent.Aimbot.Visible = true
 end)
 
-Aimbot.Name = "Aimbot"
+Aimbot.Name = "Aimbot" 
 Aimbot.Parent = GUI
 Aimbot.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 Aimbot.BackgroundTransparency = 1.000
